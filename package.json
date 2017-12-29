@@ -1,0 +1,17 @@
+{
+    "name": "MyElectronApp",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "package": "electron-packager ./ --platform=darwin --arch=x64 --out=out --icon=./icon.icns --overwrite"
+    },
+    "devDependencies": {
+        "electron-packager": "^7.3.0",
+        "electron-prebuilt": "^1.2.7",
+        "electron-prebuilt-compile": "^1.7.9"
+    },
+    "dependencies": {
+        "auto-launch": "^5.0.5"
+    }
+}

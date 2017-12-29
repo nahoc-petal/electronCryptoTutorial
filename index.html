@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cryptomaniak</title>
+  <link rel="stylesheet" herf="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="./vendor/css/photon.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css" media="screen" charset="utf-8">
+</head>
+
+<body>
+  <div class="header-arrow"></div>
+  <div class="window">
+    <header class="header">
+      <span id="marketTabButton" class="is-pulled-left tabButton tabButtonActive leftTabButton">Market</span>
+      <span id="portfolioTabButton" class="is-pulled-right tabButton rightTabButton">Portfolio</span>
+      <span id="settingsTabButton" class="tabButton settingsTabButton">Settings</span>
+    </header>
+    <div class="window-content">
+      <!-- Portfolio balance -->
+      <section id="balance" class="balanceTab closed">
+        <div class="balanceAmount">$0,00</div>
+        <div class="balanceText">You have</div>
+      </section>
+
+      <!-- Market tab -->
+      <section id="marketTab" class="tab tabActive">
+        <ul id="marketTabCoins" class="list">
+          <!-- Market coins go here -->
+        </ul>
+      </section>
+
+      <!-- Portfolio tab -->
+      <section id="portfolioTab" class="tab">
+        <ul id="portfolioTabCoins" class="list">
+          <!-- Portfolio coins go here -->
+        </ul>
+      </section>
+
+      <!-- Settings tab -->
+      <section id="settingsTab" class="tab">
+        <ul id="settings" class="list">
+          <!-- Settings go here -->
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    window.$ = window.jQuery = require('./js/jquery.min.js');
+  </script>
+  <script>require('./js/script.js');</script>
+</body>
+
+</html>
